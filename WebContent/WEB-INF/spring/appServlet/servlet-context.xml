@@ -23,13 +23,14 @@
 		in the /WEB-INF/views directory -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/views"></property>
+		<property name="prefix" value="/WEB-INF/views/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
 
 	<context:component-scan
-		base-package="com.jimmy.experimentals.springmvctest.beans,
-		com.jimmy.experimentals.springmvctest.controllers,
+		base-package="
+		com.jimmy.experimentals.springmvctest.bean,
+		com.jimmy.experimentals.springmvctest.controller,
     	com.jimmy.experimentals.springmvctest.dao,
     	com.jimmy.experimentals.springmvctest.service"></context:component-scan>
     	

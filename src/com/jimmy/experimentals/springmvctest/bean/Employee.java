@@ -1,4 +1,4 @@
-package com.jimmy.experimentals.springmvctest.beans;
+package com.jimmy.experimentals.springmvctest.bean;
 
 import java.time.LocalDateTime;
 

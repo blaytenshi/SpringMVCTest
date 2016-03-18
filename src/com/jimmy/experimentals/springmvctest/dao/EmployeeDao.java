@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Component;
 
-import com.jimmy.experimentals.springmvctest.beans.Employee;
+import com.jimmy.experimentals.springmvctest.bean.Employee;
 
 @Component("employeeDao")
 public class EmployeeDao {

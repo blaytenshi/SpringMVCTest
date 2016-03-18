@@ -1,4 +1,4 @@
-package com.jimmy.experimentals.springmvctest.controllers;
+package com.jimmy.experimentals.springmvctest.controller;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -10,21 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jimmy.experimentals.springmvctest.beans.Employee;
+import com.jimmy.experimentals.springmvctest.bean.Employee;
 import com.jimmy.experimentals.springmvctest.service.EmployeeService;
 
 @RestController
-public class HomeController {
+public class DataController {
 
 	@Autowired
 	EmployeeService employeeService;
-	
-	@RequestMapping("/")
-	public String showHome() {
-		System.out.println("Showing Home Page...");
-		
-		return "home";
-	}
 	
 	@RequestMapping(value="/getEmployees", method=RequestMethod.GET)
 	public ResponseEntity<List<Employee>> listAllEmployees() {

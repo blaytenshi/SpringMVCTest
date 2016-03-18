@@ -13,4 +13,10 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping("/customMap")
+	public String showCustomMap() {
+		System.out.println("Showing Custom Map page...");
+		return "customMap";
+	}
+	
 }

@@ -15,8 +15,14 @@ public class HomeController {
 	
 	@RequestMapping("/customMap")
 	public String showCustomMap() {
-		System.out.println("Showing Custom Map page...");
+		System.out.println("Showing Leaflet Map page...");
 		return "customMap";
+	}
+	
+	@RequestMapping("/openLayersMap")
+	public String showOpenLayersMap() {
+		System.out.println("Showing Open Layers Map Page...");
+		return "openLayersMap";
 	}
 	
 }

@@ -27,9 +27,6 @@ var map = new ol.Map({
 });
 
 $(document).ready(function() {
-	
-	
-	
 	$.ajax({
 		method: 'GET',
 		// url: "http://localhost:8080/heimdall/get/waspmote/ES_B_08_422_7BDC/BAT/",

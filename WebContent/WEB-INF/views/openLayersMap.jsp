@@ -20,6 +20,7 @@
 	<script type="text/javascript">
 		var appContextPath = "<%=request.getContextPath()%>";
 	</script>
+	<div class="info" id="info"></div>
 </body>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/openLayersExample.js"></script>

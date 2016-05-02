@@ -25,4 +25,10 @@ public class HomeController {
 		return "openLayersMap";
 	}
 	
+	@RequestMapping("/employees")
+	public String showEmployees() {
+		System.out.println("Show Employees");
+		return "employees";
+	}
+	
 }

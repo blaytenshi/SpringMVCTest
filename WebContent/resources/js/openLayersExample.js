@@ -18,23 +18,21 @@ $(document).ready(function() {
 		})
 	});
 	
-
+	var iconStyle = new ol.style.Style({
+		image: new ol.style.Icon(
+			({
+				anchor: [0.5, 0.5],
+				anchorXUnits: 'fraction',
+				anchorYUnits: 'fraction',
+				opacity: 0.9,
+				src: appContextPath + '/resources/img/waspmote.png'
+			})
+		)
+	});	
 	
 	function dataCallback(returnedData, levelNumber) { // Implementation of the callback method. Never actually called except for when called back by success of JQuery's AJAX method.
 		
 		var waspfeatures = [];
-		
-		var iconStyle = new ol.style.Style({
-			image: new ol.style.Icon(
-				({
-					anchor: [0.5, 0.5],
-					anchorXUnits: 'fraction',
-					anchorYUnits: 'fraction',
-					opacity: 0.9,
-					src: appContextPath + '/resources/img/waspmote.png'
-				})
-			)
-		});
 		
 		var newLayer = new ol.layer.Image({
 			source: new ol.source.ImageStatic({
@@ -47,9 +45,13 @@ $(document).ready(function() {
 		});
 		map.addLayer(newLayer);
 		
+		console.log("ReturnedDataContents:");
+		console.log(returnedData);
+		
 		for(var i in returnedData) {
+			console.log("Value of location X: " + returnedData[i].locationX + "Value of location Y:" + returnedData[i].locationY);
 			var feature = new ol.Feature({
-				geometry: new ol.geom.Point([returnedData.locationX, returnedData.locationY]),
+				geometry: new ol.geom.Point([returnedData[i].locationX, returnedData[i].locationY]),
 				name: returnedData.sensorName
 			})
 			feature.setStyle(iconStyle);

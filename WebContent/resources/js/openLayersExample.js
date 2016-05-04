@@ -24,6 +24,7 @@ $(document).ready(function() {
 				anchor: [0.5, 0.5],
 				anchorXUnits: 'fraction',
 				anchorYUnits: 'fraction',
+				scale: 0.5,
 				opacity: 0.9,
 				src: appContextPath + '/resources/img/waspmote.png'
 			})

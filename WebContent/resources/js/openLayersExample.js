@@ -14,7 +14,8 @@ $(document).ready(function() {
 			projection: projection,
 			center: ol.extent.getCenter(extent),
 			zoom: 2,
-			maxZoom: 8
+			minZoom: 2,
+			maxZoom: 4
 		})
 	});
 	
@@ -99,5 +100,11 @@ $(document).ready(function() {
 			}
 		})
 	}
+	
+	$('#click').popover({
+		title : 'popover!',
+		content : 'hello :)',
+		container : 'body'
+	});
 	
 });

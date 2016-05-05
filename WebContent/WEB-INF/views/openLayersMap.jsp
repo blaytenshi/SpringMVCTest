@@ -5,6 +5,7 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="http://openlayers.org/en/v3.15.1/css/ol.css" type="text/css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.css" type="text/css">
 <style>
 .map {
 	height: 600px;
@@ -21,7 +22,11 @@
 		var appContextPath = "<%=request.getContextPath()%>";
 	</script>
 	<div class="info" id="info"></div>
+	<div>
+		<button type="button" class="btn btn-default" id="click" data-toggle="popover">Click me!</button>
+	</div>
 </body>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/openLayersExample.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
 </html>

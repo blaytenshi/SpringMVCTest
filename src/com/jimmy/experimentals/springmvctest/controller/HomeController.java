@@ -31,4 +31,10 @@ public class HomeController {
 		return "employees";
 	}
 	
+	@RequestMapping("/bootstrapTesting")
+	public String showBootstrapTesting() {
+		System.out.println("Show Bootstrap Testing...");
+		return "bootstrapTesting";
+	}
+	
 }

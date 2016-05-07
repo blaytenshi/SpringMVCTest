@@ -17,12 +17,22 @@
 	<title>CustomMap</title>
 </head>
 <body>
-	Custom Map! :D
+	Bootstrap Testing! :D
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-1"></div>
-			<div id="customMap" class="col-md-10"></div>
-			<div class="col-md-1"></div>
+		<div class="col-md-10 col-md-offset-1">
+			<form>
+				<div class="form-group">
+				<label for="levelSelect">Select Level: </label>
+				<select class="form-control" id="levelSelect">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+				</div>
+			</form>
+		</div>
 		</div>
 	</div>
 </body>

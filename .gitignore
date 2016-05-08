@@ -6,3 +6,4 @@
 *.springBeans
 /build/
 /target/
+/bin/

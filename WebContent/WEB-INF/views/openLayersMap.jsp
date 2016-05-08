@@ -16,14 +16,21 @@
 <title>OpenLayers 3 example</title>
 </head>
 <body>
-	<h2>My Map</h2>
-	<div id="map" class="map"></div>
-	<script type="text/javascript">
-		var appContextPath = "<%=request.getContextPath()%>";
-	</script>
-	<div class="info" id="info"></div>
-	<div>
-		<button type="button" class="btn btn-default" id="click" data-toggle="popover">Click me!</button>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="map" class="map col-md-10 col-md-offset-1"></div>
+		</div>
+		<div class="row">
+			<script type="text/javascript">
+				var appContextPath = "<%=request.getContextPath()%>";
+			</script>
+			<div class="info col-md-10 col-md-offset-1" id="info"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<button type="button" class="btn btn-default" id="click" data-toggle="popover">Click me!</button>
+			</div>
+		</div>
 	</div>
 </body>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.js"></script>
